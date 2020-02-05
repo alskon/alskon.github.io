@@ -1,0 +1,41 @@
+body {
+    margin: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: #b1c7d1;
+    text-align: center;
+}
+h1 {
+    letter-spacing: 3px;
+    text-shadow: black 2px 1px 1px;
+    margin: 50px auto;
+    color: #fff;
+}
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+}
+img {
+    border: 1px black solid;
+    margin: 0 10px;
+}
+.cakes {
+    height: 100vh;
+    width: 800px;
+    box-sizing: border-box;
+
+    
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 60px;
+}
+.cakes-html, .cakes-react {
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: black 5px 5px 15px;
+    border: 1px black solid;
+    background-color: #ccc776;
+}
