@@ -5,8 +5,7 @@ body {
     text-align: center;
 }
 h1 {
-    letter-spacing: 3px;
-    text-shadow: black 2px 1px 1px;
+    text-shadow: black 5px 1px 4px;
     margin: 50px auto;
     color: #fff;
 }
