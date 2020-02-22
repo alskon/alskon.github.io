@@ -37,6 +37,7 @@ img {
     box-shadow: black 5px 5px 15px;
     border: 1px black solid;
     background-color: #ccc776;
+    border-radius: 5px
 }
 }
 .cakes-html:hover, .cakes-react:hover {
