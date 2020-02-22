@@ -1,7 +1,7 @@
 body {
     margin: auto;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: #b1c7d1;
+    background: rgb(85, 84, 84);
     text-align: center;
 }
 h1 {
@@ -19,7 +19,7 @@ img {
     border: 1px black solid;
     margin: 0 10px;
 }
-.cakes {
+.sections {
     height: 100vh;
     width: 800px;
     box-sizing: border-box;
@@ -31,15 +31,16 @@ img {
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 60px;
 }
-.cakes-html, .cakes-react {
+.cakes-html, .cakes-react, .vsereshaem-html, .vsereshaem-react {
     text-align: center;
     box-sizing: border-box;
     box-shadow: black 5px 5px 15px;
     border: 1px black solid;
     background-color: #ccc776;
-    border-radius: 5px
+    border-radius: 15px;
 }
-.cakes-html:hover, .cakes-react:hover {
+
+.cakes-html:hover, .cakes-react:hover, .vsereshaem-html:hover, .vsereshaem-react:hover {
     border:1px lightblue solid ;
     box-shadow: 4px 4px 17px lightblue;
 }

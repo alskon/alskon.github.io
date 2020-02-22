@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>ВсёРешаемРу - бухгалтерский учет налоговый учет ООО и ИП</title>
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-database.js"></script>
+    <link rel='stylesheet' href="../../css/style.css">
+    
+</head>
+<body>
+    <header class='main-header'>
+        <div class='logo-name'>
+            <p class='main-header-logo'><img src='../../img/logo.jpg' alt="АКГ Аудит-Бюро"></p>
+            <p class='main-header-title'>АКГ Аудит-Бюро <br> <span class='logo-descript'>Бухгалтерское и юридическое сопровождение</span></p>
+        </div>
+        <nav>
+            <ul class='main-nav-menu'>
+                <li><a href='../../index.html'>Главная</a></li>
+                <li class='services-top services-active'><a>Услуги</a>
+                    <ul class='services '>
+                        <li><a href='./outsourcing.html'>Аутсорсинг</a></li>
+                        <li><a>Консалтинг</a></li>
+                        <li><a href='./legalservices.html'>Юридические услуги</a></li>
+                    </ul>
+                </li>                
+                <li><a href='../blog/articles.html'>Блог</a></li>
+                <li><a href='../about/about.html'>О нас</a></li>
+                <li><a href='../contacts/contacts.html'>Контакты</a></li>
+            </ul>            
+        </nav>
+        <a class='enter-user' id='enter-user-but'>Войти</a>
+    </header>
+    <main>        
+        <h1 class='hidden'>АКГ Аудит-Бюро - Бухгалтерское и юридическое сопровождение</h1>
+        <h2 class='content-page-h2'>Консалтинг</h2>
+        <section class='section-acc-tax'>
+            <h3 class='content-page-h3'>Бухгалтерское и налоговое консультирование </h3>
+                <p>предполагает как устное, 
+                так и письменное консультирование клиентов по вопросам применения налогового законодательства, 
+                а также по правильному ведению бухгалтерского учета и исчислению налогов</p>
+            <p>Мы поможем Вам:</p>
+            <ul>
+                <li>разобраться с нюансами бухгалтерского и налогового учета;</li>
+                <li>проанализировать актуальность применяемой учетной политики Вашей организации;</li>
+                <li>правильно выбрать систему налогообложения, разработать учетную политику и график документооборота;</li>
+                <li>проверить эффективность работы Вашей бухгалтерии;</li>
+                <li>оценить финансовые риски при покупке, продаже, слиянии бизнеса;</li>
+                <li>грамотно ответить на требования налоговой инспекции, пенсионного фонда, фонда социального страхования, а также на запросы Росфинмониторинга;</li>
+                <li>представлять ваши интересы в налоговых органах, пенсионном фонде, фонде социального страхования, в том числе в случае проведения проверок;</li>
+                <li>оценить налоговые и административные риски и принять обоснованные решения.</li>
+            </ul>
+            <p>Наши специалисты оперативно ответят на любые вопросы, касающиеся бухгалтерского учета и налогообложения.</p>
+        </section>
+        <section class='section-fin'>
+            <h3 class='content-page-h3'>Финансовое консультирование</h3> 
+                <p>подразумевает решение комплекса задач, направленных на изучение и улучшение финансового положения клиента</p>
+            <p>Наши специалисты:</p>
+            <ul>
+                <li>проведут финансовый анализ состояния Вашей организации и определят основные финансовые показатели деятельности;</li>
+                <li>оценят вероятность наступления банкротства;</li>
+                <li>помогут разработать финансовую стратегию, составить БДР (бюджет доходов и расходов) и БДДС (бюджет движения денежных средств), составят бизнес-план;</li>
+                <li>проанализируют денежные потоки, выявят нецелевые статьи расходов.</li>
+            </ul>
+        </section>
+        <section>           
+            <p class='main-section-contacts'>Заинтересовались нашим предложением? Пожалуйста заполните анкету клиента и отправьте 
+                её нам на адрес <a href='mailto:vr@abaf.ru'>vr@abaf.ru</a> или свяжитесь с нашими специалистами по телефонам:<br> +7 (8442) 366767, +7 (8442) 367474, +7 (966) 7886192.</p>
+        </section>
+
+    </main>
+    <footer class='main-footer'>
+        <p>2019, АКГ "Аудит-Бюро", vr@abaf.ru <br>
+            +7 (8442) 366767; +7 (8442) 367474</p>
+        <ul class='social-link'>
+            <li class='social-link-inst'><a href='https://www.instagram.com/vsereshaem/'><img class='social-link-inst-img' src='../../img/icon_instagram.png'></a></li>
+            <li class='social-link-vk'><a href='https://vk.com/public182579912'><img class='social-link-vk-img' src='../../img/icon_vk.png'></a></li>
+        </ul>
+        <p>Разработано: AlSKon</p>
+    </footer>
+    <div class='overlay-modal-enter-user'>
+        <div class='modal-enter-user'>
+            <form id='modal-enter-form'>
+                <span class="close-modal-enter-user">&times;</span>
+                <h3>Введите данные:</h3>            
+                <label for='login-user'>Логин:</label>
+                <input id='login-user'> <br>
+                <label for='login-password'>Пароль:</label>
+                <input id='login-password'> <br>
+                <button class='close-modal-enter-user-but-enter' type='button'>Войти!</button>
+                <p id='resultAuthForm'></p>
+            </form>
+            
+        </div>
+    </div>   
+    <script src='../../script/script-common.js'></script>
+</body>

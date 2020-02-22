@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>ВсёРешаемРу - бухгалтерский учет налоговый учет ООО и ИП</title>
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-database.js"></script>
+    <link rel='stylesheet' href="css/style.css">    
+</head>
+<body>
+    <header class='main-header'>
+        <div class='logo-name'>
+            <p class='main-header-logo'><img src='img/logo.jpg' alt="АКГ Аудит-Бюро"></p>
+            <p class='main-header-title'>АКГ Аудит-Бюро <br> <span class='logo-descript'>Бухгалтерское и юридическое сопровождение</span></p>
+        </div>
+        <nav>
+            <ul class='main-nav-menu'>
+                <li class='main-header-nav-active'><a>Главная</a></li>
+                <li class='services-top'><a>Услуги</a>
+                    <ul class='services'>
+                        <li><a href='./content/services/outsourcing.html'>Аутсорсинг</a></li>
+                        <li><a href='./content/services/consulting.html'>Консалтинг</a></li>
+                        <li><a href='./content/services/legalservices.html'>Юридические услуги</a></li>
+                    </ul>
+                </li>                
+                <li><a href='./content/blog/articles.html'>Блог</a></li>
+                <li><a href='./content/about/about.html'>О нас</a></li>
+                <li><a href='./content/contacts/contacts.html'>Контакты</a></li>
+            </ul>            
+        </nav>
+        <a class='enter-user' id='enter-user-but'>Войти</a>
+    </header>
+    <main>
+        <img class='main-theme' src="img/main-theme.jpg">
+        <h1 class='hidden'>АКГ Аудит-Бюро - Бухгалтерское и юридическое сопровождение</h1>
+        <section>            
+                <h2>Решение проблем в бухгалтерской, налоговой, юридической и финансовой областях</h2>
+
+                    <ul class='main-content'>
+                        <li>Команда vsereshaem.ru гарантирует высокое качество услуг с учетом специфики каждого клиента</li>
+                        <li>Наши специалисты готовы работать с Вами в любое удобное для Вас время вне зависимости от региона</li>
+                        <li>Аттестованные аудиторы с многолетним стажем — это официальное подтверждение уровня знаний и опыта в трудовом, финансовом, налоговом и хозяйственном праве</li>
+                    </ul>
+            <section class='main-section-services'>
+                <h3>Виды оказываемых услуг</h3>
+                <div class='main-section-services-wrapper'>
+                    <a href='./content/services/outsourcing.html'>Сотрудничество в формате аутсорсинга заключается в передаче части учетных функций или 
+                        полное ведение учета бухгалтерам нашей организации. Это помогает оптимизировать документооборот, 
+                        сократить издержки, выявить скрытые резервы и сосредоточить усилия на основной деятельности</a>
+                    <a href='./content/services/consulting.html'>Мы оказываем консультационные услуги с учетом интересов акционеров, топ-менеджеров, сотрудников, 
+                        партнеров и клиентов компаний, применяя современные эффективные методики с соблюдением этических норм и правил.</a>
+                    <a href='./content/services/legalservices.html'>Мы оказываем наиболее востребованные юридические услуги по сопровождению бизнеса. Наши эксперты 
+                        проводят консультации, подготавливают договоры и исковые заявления, представляют интересы клиента в суде, 
+                        при общении с государственными органами и контрагентами.</a>
+                </div>
+            </section>
+            <p class='main-section-contacts'>Заинтересовались нашим предложением? Пожалуйста заполните анкету клиента и отправьте 
+                её нам на адрес <a href='mailto:vr@abaf.ru'>vr@abaf.ru</a> или свяжитесь с нашими специалистами по телефонам:<br> +7 (8442) 366767, +7 (8442) 367474, +7 (966) 7886192.</p>
+        </section>
+
+    </main>
+    <footer class='main-footer'>
+        <p>2019, АКГ "Аудит-Бюро", vr@abaf.ru <br>
+            +7 (8442) 366767; +7 (8442) 367474</p>
+        <ul class='social-link'>
+            <li class='social-link-inst'><a href='https://www.instagram.com/vsereshaem/'><img class='social-link-inst-img' src='img/icon_instagram.png'></a></li>
+            <li class='social-link-vk'><a href='https://vk.com/public182579912'><img class='social-link-vk-img' src='img/icon_vk.png'></a></li>
+        </ul>
+        <p>Разработано: AlSKon</p>
+    </footer>
+    <div class='overlay-modal-enter-user'>
+        <div class='modal-enter-user'>
+            <form id='modal-enter-form'>
+                <span class="close-modal-enter-user">&times;</span>
+                <h3>Введите данные:</h3>            
+                <label for='login-user'>Логин:</label>
+                <input id='login-user'> <br>
+                <label for='login-password'>Пароль:</label>
+                <input id='login-password'> <br>
+                <button class='close-modal-enter-user-but-enter' type='button'>Войти!</button>
+                <p id='resultAuthForm'></p>
+            </form>
+            
+        </div>
+    </div>
+   
+    <script src='./script/script-common.js'></script>
+</body>

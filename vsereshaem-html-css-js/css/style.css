@@ -1,0 +1,519 @@
+@font-face {
+    font-family: 'Ford Antenna'; 
+    src: local('Ford Antenna Extra Light'), local('Ford-Antenna-Extra-Light'),
+        url('../Fonts/FordAntenna-ExtraLight.woff2') format('woff2'),
+        url('../Fonts/FordAntenna-ExtraLight.woff') format('woff'),
+        url('../Fonts/FordAntenna-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+ } 
+body {
+    width:100%;
+    height: 100%;
+    margin:auto;
+    max-width:1800px;
+    padding: 0 40px;
+    font-family: 'Vollkorn', Helvetica, Arial, serif;
+    font-size: 18px;
+    position: relative;
+}
+.hidden {
+    display: none;
+}
+/*header*/
+.enter-user {
+    cursor: pointer;
+}
+.main-header {
+    display: grid;
+    grid-template-columns: 1fr 2.0fr 0.5fr;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px black solid;
+}
+/*div-logo*/
+.logo-name {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    align-items: center;
+    text-align: left;
+}
+.logo-descript {
+    font-size: 14px;
+    font-weight: 700;
+}
+/*nav*/
+.main-nav-menu {
+    list-style: none;
+    text-align: left;
+}
+.main-nav-menu > li {
+    display: inline-block;
+    margin: 20px;
+}
+.main-nav-menu > li > a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+.main-nav-menu > li:hover {
+    background-color: cadetblue;
+    transition: 0.25s;
+}
+.main-nav-menu > li > a:hover {
+    color: white;
+}
+.services {
+    display: none;
+    list-style: none;
+    position: absolute;
+    padding: 10px 20px;
+    background-color: gray;
+}
+.services li {
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px black solid;
+    border-top: none;
+    box-shadow: 1px 2px 5px black;
+    background-color: white;
+}
+.services li a {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;    
+}
+.services-top:hover .services {
+    display: block;
+}
+.services li:hover {
+    background-color: cadetblue;
+}
+.services li a:hover {
+    display: block;
+    color:white;
+}
+.main-header-nav-active {
+    background-color: cadetblue;
+}
+.main-nav-menu .main-header-nav-active a {
+    color: white;
+}
+.services-active {
+    background-color: cadetblue;    
+}
+.main-nav-menu .services-active > a {
+    color: white;
+}
+/*main*/
+.main-theme {
+    margin-top: 10px;
+    width: 100%;
+}
+main section h2 {
+    text-align: center;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+}
+main .content-page-h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', Helvetica, Arial, serif;
+    font-size: 44px;
+    font-weight: 300;
+    padding:30px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(141,141,147,1) 50%, rgba(2,0,36,1) 100%);
+}
+main .content-page-h3 {
+    font-size: 32px;
+    margin-bottom: 5px;
+    text-align: center;
+ }
+
+.our-mission, .our-history {
+    text-align: center;
+    width: 1000px;
+    margin: auto;    
+    border-bottom:1px black solid;
+ }
+
+ .our-mission p, .our-history p {
+     text-align: center;
+    font-family: 'Ford Antenna', Helvetica, Arial, serif;
+ }
+ .our-mission p:last-child, .our-history p:last-child {
+    margin-bottom:32px;
+ }
+ .our-personal-gallery {
+     display: grid;
+     grid-template-columns: repeat(5, 250px);
+     grid-template-rows: 1fr 1fr;
+     grid-row-gap: 20px;
+     text-align: center;
+     justify-content: center;
+     list-style: none;
+     margin-bottom: 80px;
+ }
+ .our-personal-gallery img {
+     width: 200px;
+ }
+.main-content {
+    list-style: none;
+    display: flex;
+    width:100%;
+    align-items:center;
+    justify-content: center;
+    text-align: center;      
+}
+.main-content li {
+    font-family: 'Ford Antenna', Helvetica, Arial, serif;
+    font-size: 18px; 
+    width:350px;
+    min-width: 250px;
+    height: 350px;
+    min-height: 250px;
+    padding:20px;
+    margin: 30px;
+    display:flex;
+    align-items:center;
+    border:1px white solid;
+    border-radius: 5px;
+    box-shadow: 4px 4px 17px gray;
+}
+.main-content li:hover {
+    border:1px lightblue solid ;
+    box-shadow: 4px 4px 17px lightblue;
+}
+/*main section 2 - services*/
+.main-section-services {
+    text-align: center;
+}
+.main-section-services h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+.main-section-services-wrapper {
+    display: flex;
+    width:100%;
+    align-items:center;
+    justify-content: center;
+    text-align: center;  
+}
+.main-section-services-wrapper a {
+    text-decoration: none;
+    color:white;
+    background-color: #015187;
+    font-family: 'Ford Antenna', Helvetica, Arial, serif;
+    font-size: 18px;
+    min-width: 250px;
+    min-height: 350px;
+    padding:20px;
+    margin: 30px;
+    display:flex;
+    align-items:center;
+    border:1px white solid;
+    border-radius: 5px;
+    box-shadow: 4px 4px 17px gray;
+}
+.main-section-services-wrapper a:hover {
+    border:1px black solid ;
+    box-shadow: 4px 4px 17px lightblue;
+}
+/*main contacts*/
+.main-section-contacts {
+    font-family: 'Ford Antenna', Helvetica, Arial, serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 50px 50px 50px;
+    margin-bottom: 50px;
+    border: 1px black solid;
+    text-align: center;
+}
+.main-section-contacts a {
+    text-decoration: none;
+    color: black;
+}
+.main-contacts-contacts {   
+    font-weight: 500;
+    border: 1px black dotted;
+    list-style: none;
+}
+.main-contacts-contacts li {
+    font-family: 'Ford Antenna', Helvetica, Arial, serif;
+    font-size: 18px;
+    margin-left: 33%;
+    padding:20px;
+}
+.main-contacts-contacts li i {
+    float:left;
+    padding: 3px;
+
+}
+.section-acc-tax, .section-fin, .section-outsorce, .section-law {
+    width:1000px;
+    margin: auto;
+}
+
+.section-acc-tax p, .section-fin p, .section-acc-tax ul, .section-fin ul, .section-outsorce ul, .section-outsorce p, .section-law p, .section-law ul {
+    font-family: 'Ford Antenna', Helvetica, Arial, serif;
+}
+.section-fin, .section-outsorce-last, .section-law-last {
+    margin-bottom: 80px;
+}
+.section-acc-tax ul, .section-fin ul, .section-outsorce ul, .section-law ul {
+    list-style: none;
+}
+.section-acc-tax ul li, .section-fin ul li, .section-outsorce ul li, .section-law ul li {
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    padding:5px;
+    background-color:rgba(78, 74, 107, 0.6);
+    color: white;
+}
+.section-acc-tax ul li:hover, .section-fin ul li:hover, .section-outsorce ul li:hover, .section-law ul li:hover {
+    box-shadow: 4px 4px 17px lightblue
+}
+.articles-wrapper {
+    display: grid;
+    font-family: 'Montserrat', Helvetica, Arial, serif;
+    font-size: 15px;
+    font-weight: 300;
+    width: 1000px;
+    margin: auto;
+    grid-row-gap: 50px;
+    grid-template-areas: 'article-1 article-2'
+                        'article-3 article-3'
+                        'article-4 article-4';
+}
+.preview-article-1 {
+    grid-area: article-1;
+    width:400px;
+    padding:10px;
+    border:1px white solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px 17px gray;
+}
+
+.preview-article-1::before {
+    background-image: url('../img/articles/article-1.jpg');
+    background-repeat: no-repeat;
+    width:400px;
+    height: 200px;
+    content: '';
+    display: block;
+}
+.preview-article-2 {
+    grid-area: article-2;
+    width:400px;
+    padding:10px;
+    border:1px white solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px 17px gray;
+}
+.preview-article-2::before {
+    background-image: url('../img/articles/article-2.jpg');
+    background-repeat: no-repeat;
+    width:400px;
+    height: 200px;
+    content: '';
+    display: block;
+}
+.preview-article-3 {
+    grid-area: article-3;
+    width:900px;
+    padding: 15px;
+    border:1px white solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px 17px gray;
+}
+.preview-article-3::before {
+    background-image: url('../img/articles/article-3.jpg');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 120px;
+    content: '';
+    display: block;
+    float: left;
+}
+.preview-article-4 {
+    grid-area: article-4;
+    width:900px;
+    padding:15px;
+    border:1px white solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px 17px gray;
+    margin-bottom: 40px;
+}
+.preview-article-4::before {
+    background-image: url('../img/articles/article-4.jpg');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 120px;
+    content: '';
+    display: block;
+    float: left;
+}
+.preview-article-1:hover, .preview-article-2:hover, .preview-article-3:hover, .preview-article-4:hover {
+    box-shadow: 4px 4px 17px lightblue;
+}
+.sect-callback-form {
+    border: 1px black dotted;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    text-align: center;    
+}
+.sect-callback-form h3 {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+.callback-form {
+    display: inline-block;
+    margin: 20px;  
+    width:700px;
+}
+.callback-form div {
+    margin: 15px 0;
+}
+.callback-form div label{
+    display: block;
+    text-align: left;
+}
+.callback-form div input, .callback-form div textarea {
+    display: block;
+    width:600px;
+    text-align: left;
+    box-shadow: 1px 1px 3px gray;
+}
+.callback-form div textarea {
+    height:200px;
+}
+.callback-form button {
+    margin-top: 0;
+    font-weight: 700;
+    border:1px white solid;
+    background-color:rgb(12, 136, 12);
+    color: white;
+    margin-right: 20px;
+    padding:10px;
+}
+.callback-form div p {
+    text-align: left;
+    margin-top: 0;
+    font-size: 14px;
+}
+/*footer*/
+.main-footer {
+    font-family: 'Ford Antenna', Helvetica, Arial, serif;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    align-items: center;
+    border-top: 1px black dotted
+}
+.social-link {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.social-link-inst-img, .social-link-vk-img {
+    width:60px;
+}
+.social-link-inst {
+    text-align: right;
+    margin-right:10px;
+}
+.social-link-vk {
+    text-align: left;
+    margin-left: 10px;
+}
+/*modal-enter*/
+.overlay-modal-enter-user {
+    display: none;
+    background-color:rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.modal-enter-user {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+}
+.modal-enter-user form {
+    border: 1px black solid;
+    width:400px;
+    padding-bottom:40px;
+    padding-left: 40px;
+    color: white;
+    background-color: #015187;
+} 
+.modal-enter-user form input{
+   float: right;
+   margin-right: 40px;
+}
+.modal-enter-user form button {
+    margin-top:20px;
+    font-weight: 700;
+    border:1px white solid;
+    background-color:rgb(12, 136, 12);
+    color: white;
+    margin-right: 20px;
+    padding:10px;
+}
+/*modal-enter-close*/
+.close-modal-enter-user {
+    margin: 0;
+    padding-right: 10px;
+    float:right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close-modal-enter-user:hover { 
+    color:black;
+    cursor: pointer;
+}
+/*modal-article*/
+.overlay-modal-article {
+    display: none;
+    background-color:rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.modal-article {
+    position: fixed;    
+    width:60%;
+    height:60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    background-color:white;
+    border: 5px rgb(12, 136, 12) solid; 
+    border-radius: 10px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.current-article {
+    width: 100%;
+    padding:20px;
+}
+.current-article p {
+    font-family: 'Ford Antenna', Helvetica, Arial, serif;
+    padding-right: 30px;
+}
+.current-article p i {
+    font-weight:700
+}
+
+

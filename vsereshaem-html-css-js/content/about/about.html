@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>ВсёРешаемРу - бухгалтерский учет налоговый учет ООО и ИП</title>
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-database.js"></script>
+    <link rel='stylesheet' href="../../css/style.css">
+    
+</head>
+<body>
+    <header class='main-header'>
+        <div class='logo-name'>
+            <p class='main-header-logo'><img src='../../img/logo.jpg' alt="АКГ Аудит-Бюро"></p>
+            <p class='main-header-title'>АКГ Аудит-Бюро <br> <span class='logo-descript'>Бухгалтерское и юридическое сопровождение</span></p>
+        </div>
+        <nav>
+            <ul class='main-nav-menu'>
+                <li><a href='../../index.html'>Главная</a></li>
+                <li class='services-top'><a>Услуги</a>
+                    <ul class='services'>
+                        <li><a href='../services/outsourcing.html'>Аутсорсинг</a></li>
+                        <li><a href='../services/consulting.html'>Консалтинг</a></li>
+                        <li><a href='../services/legalservices.html'>Юридические услуги</a></li>
+                    </ul>
+                </li>                
+                <li><a href='../blog/articles.html'>Блог</a></li>
+                <li class='main-header-nav-active'><a>О нас</a></li>
+                <li><a href='../contacts/contacts.html'>Контакты</a></li>
+            </ul>            
+        </nav>
+        <a class='enter-user' id='enter-user-but'>Войти</a>
+    </header>
+    <main>
+
+        <h1 class='hidden'>АКГ Аудит-Бюро - Бухгалтерское и юридическое сопровождение</h1>
+        <h2 class='content-page-h2'>О нас</h2>
+        <section class='our-mission'>
+                <h3 class='content-page-h3'>Наша миссия</h3>
+                <p>Мы стремимся помочь каждому клиенту найти решение даже самых нестандартных проблем в бухгалтерской, налоговой, финансовой и юридической областях. 
+                    Мы работаем для того, чтобы наши знания и опыт способствовали развитию вашего бизнеса и укреплению благосостояния.</p>
+        </section>
+        <section class="our-history">
+            <h3 class='content-page-h3'>Наша история</h3>
+            <p>Компания ООО «АКГ «Аудит – Бюро» создана в 2001 г.</p>
+            <p>В 2019 нам исполнилось 18 лет. Целая жизнь! За время своего существования мы успели проверить более, 
+                чем 150 компаний, выдать почти 2 000 аудиторских заключений, воспитать не одно поколение главных бухгалтеров 
+                и финансовых специалистов.</p>
+            <p>В год своего совершеннолетия мы создали проект VseReshaem.Ru, чтобы наш опыт и знания, накопленные за годы аудиторском 
+                практики, помогали вам укреплять и развивать свой бизнес. Тем более, что современные интернет технологии делают наши услуги 
+                доступными практически каждому, независимо от расстояния.</p>
+        </section>
+        <section class="our-personal">
+            <h3 class='content-page-h3'>Наш команда</h3>
+            <ul class='our-personal-gallery'>
+                <li><img src='../../img/about/10.jpg'><p>Елена Малышева, аттестат аудитора № К017653 от 29.06.1995, СРО ААС, ОРНЗ 21606071231</p></li>
+                <li><img src='../../img/about/105.jpg'><p>Надежда Михалева, аттестат аудитора № К024803 от 28.01.1999, СРО ААС, ОРНЗ 21206022478</p></li>
+                <li><img src='../../img/about/106.jpg'><p>Александр Малышев, аттестат аудитора № К001310 от 31.10.1996, СРО ААС, ОРНЗ 21606071141</p></li>
+                <li><img src='../../img/about/11.jpg'><p>Анна Григорьева, аттестат аудитора №06-000188 от 14.11.12, СРО ААС, ОРНЗ 21206022377 </p></li>
+                <li><img src='../../img/about/22.jpg'><p>Елена Ткачева, аттестат аудитора № А032413 от 16.12.2010, СРО ААС, ОРНЗ 21606073176 </p></li>
+                <li><img src='../../img/about/33.jpg'><p>Екатерина Бурыкина</p></li>
+                <li><img src='../../img/about/44.jpg'><p>Антон Мещеряков</p></li>
+                <li><img src='../../img/about/65.jpg'><p>Алексей Кононенко</p></li>
+                <li><img src='../../img/about/75.jpg'><p>Андрей Гуреев, к.э.н., аттестат аудитора 05-000250 от 29.11.2012 СРО ААС, ОРНЗ 21606071174</p></li>
+                <li><img src='../../img/about/95.jpg'><p>Людмила Чугунова, аттестат аудитора № К019727 от 30.08.2001, СРО ААС, ОРНЗ 21606071207</p></li>
+            </ul>
+        </section>
+        <section>            
+            <p class='main-section-contacts'>Заинтересовались нашим предложением? Пожалуйста заполните анкету клиента и отправьте её нам на адрес 
+                <a href='mailto:vr@abaf.ru'>vr@abaf.ru</a> или свяжитесь с нашими специалистами по телефонам:<br> +7 (8442) 366767, +7 (8442) 367474, +7 (966) 7886192.</p>
+        </section>
+
+    </main>
+    <footer class='main-footer'>
+        <p>2019, АКГ "Аудит-Бюро", vr@abaf.ru <br>
+            +7 (8442) 366767; +7 (8442) 367474</p>
+        <ul class='social-link'>
+            <li class='social-link-inst'><a href='https://www.instagram.com/vsereshaem/'><img class='social-link-inst-img' src='../../img/icon_instagram.png'></a></li>
+            <li class='social-link-vk'><a href='https://vk.com/public182579912'><img class='social-link-vk-img' src='../../img/icon_vk.png'></a></li>
+        </ul>
+        <p>Разработано: AlSKon</p>
+    </footer>
+    <div class='overlay-modal-enter-user'>
+        <div class='modal-enter-user'>
+            <form id='modal-enter-form'>
+                <span class="close-modal-enter-user">&times;</span>
+                <h3>Введите данные:</h3>            
+                <label for='login-user'>Логин:</label>
+                <input id='login-user'> <br>
+                <label for='login-password'>Пароль:</label>
+                <input id='login-password'> <br>
+                <button class='close-modal-enter-user-but-enter' type='button'>Войти!</button>
+                <p id='resultAuthForm'></p>
+            </form>
+            
+        </div>
+    </div>   
+    <script src='../../script/script-common.js'></script>
+</body>
