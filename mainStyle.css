@@ -1,12 +1,18 @@
 body {
     margin: auto;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: rgb(85, 84, 84);
+    background-color: rgb(85, 84, 84);
     text-align: center;
 }
 h1 {
-    text-shadow: black 5px 1px 4px;
+    text-shadow: black 15px 14px 30px;
     margin: 50px auto;
+    color: #fff;
+    margin-bottom: 5px;
+}
+h4 {
+    margin: 0;
+    text-shadow: black 15px 14px 30px;
     color: #fff;
 }
 a {
@@ -20,11 +26,8 @@ img {
     margin: 0 10px;
 }
 .sections {
-    height: 100vh;
     width: 800px;
-    box-sizing: border-box;
-
-    
+    box-sizing: border-box;    
     margin: 50px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -39,7 +42,6 @@ img {
     background-color: #ccc776;
     border-radius: 15px;
 }
-
 .cakes-html:hover, .cakes-react:hover, .vsereshaem-html:hover, .vsereshaem-react:hover {
     border:1px lightblue solid ;
     box-shadow: 4px 4px 17px lightblue;
