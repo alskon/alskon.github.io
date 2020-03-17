@@ -1,19 +1,25 @@
 body {
-    margin: auto;
+
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgb(85, 84, 84);
     text-align: center;
+	height: 100%;
 }
-h1 {
-    text-shadow: black 15px 14px 30px;
+.headers {
+    background-color:rgb(116, 31, 119);
+
+}
+h1, h4 {
+	font-size: 50px;
+    text-shadow:  15px 14px 30px #fff;
+    color:#fff;
+	-webkit-text-stroke:1px gray;
     margin: 50px auto;
-    color: #fff;
     margin-bottom: 5px;
+    
 }
 h4 {
-    margin: 0;
-    text-shadow: black 15px 14px 30px;
-    color: #fff;
+	margin: 0;
+	font-size: 22px;
 }
 a {
     text-decoration: none;
@@ -24,26 +30,23 @@ a {
 img {
     border: 1px black solid;
     margin: 0 10px;
-    
 }
 .sections {
-    width: 800px;
-    box-sizing: border-box;    
-    margin: 50px auto;
+    width: 100%;
+    margin-top:30px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 60px;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
 }
-.cakes-html, .cakes-react, .vsereshaem-html, .vsereshaem-react {
-    text-align: center;
-    box-sizing: border-box;
-    box-shadow: black 5px 5px 15px;
+section {
+    margin: 20px;
+    box-shadow: black 3px 1px 15px;
     border: 1px black solid;
-    background-color: #ccc776;
+    background-color: rgb(250, 226, 203);
     border-radius: 15px;
+    box-sizing: border-box;
 }
-.cakes-html:hover, .cakes-react:hover, .vsereshaem-html:hover, .vsereshaem-react:hover {
+section:hover {
     border:1px lightblue solid ;
     box-shadow: 4px 4px 17px lightblue;
 }
