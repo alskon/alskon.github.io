@@ -50,3 +50,34 @@ section:hover {
     border:1px lightblue solid ;
     box-shadow: 4px 4px 17px lightblue;
 }
+
+.slider{
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.slider .slider-img img {
+    object-fit: cover;
+}
+
+.slider-dots {
+    text-align: center;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+
+
